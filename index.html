@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Johnston - Software Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <style>
+        /* Custom styles */
+        .dark-mode {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+
+        .accent-text {
+            color: #FFE5B4;
+        }
+
+        .typing-animation::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+
+        .custom_hidden {
+            display: none;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="dark-mode">
+
+    <header class="bg-gray-900 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold">Leo Johnston</h1>
+                <p class="text-sm">Software Developer</p>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                    <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8">
+
+        <!-- About Section -->
+        <section id="about" class="mb-12 text-center">
+            <h2 class="text-3xl font-bold mb-4">Hey there, I'm <span class="accent-text typing-animation"></span></h2>
+            <p class="text-gray-400 mb-4">
+                I'm a passionate software developer who loves exploring the world of technology.
+                Fluent in both English and Spanish, I enjoy discussing current affairs and have a deep fascination with
+                history.
+            </p>
+            <p class="text-gray-400">
+                GitHub Enthusiast 🌟 As a dedicated developer, I've co-authored numerous open-source projects and have a
+                strong command of various programming languages.
+            </p>
+            <p class="text-gray-400 mt-4">
+                Skills & Abilities 🛡️ I excel at turning ideas into real-world solutions, handling both frontend and
+                backend development. My toolbox includes Python, JavaScript, ReactJS, and more.
+            </p>
+        </section>
+
+        <!-- Languages section -->
+        <section id="languages" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Languages</h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-python-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Python</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-javascript-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">JavaScript</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-html5-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">HTML5</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-css3-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">CSS3</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-sqldeveloper-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">SQL</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-php-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">PHP</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-markdown-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Markdown</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-bash-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Bash</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-powershell-plain text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Powershell</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies section -->
+        <section id="technologies" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Technologies</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-9 gap-4">
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-pypi-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">PyPi</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-poetry-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Poetry</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-fastapi-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">FastAPI</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-sqlalchemy-plain text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">SQLAlchemy</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-nodejs-plain-wordmark colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">NodeJS</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-npm-original-wordmark colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">NPM</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-nodemon-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Nodemon</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-react-original colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">ReactJS</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-docker-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Docker</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-nginx-original colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Nginx</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-ubuntu-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Ubuntu</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-git-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Git</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-github-original colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">GitHub</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-heroku-original colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Heroku</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-visualstudio-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">VSCode</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-azure-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Azure</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-bootstrap-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Bootstrap</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-cloudflare-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Cloudflare</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-electron-original colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Electron</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-flask-original colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Flask</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-githubcodespaces-plain text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Codespaces</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-linux-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Linux</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-mysql-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">MySQL</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-mariadb-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">MariaDB</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-mongodb-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">MongoDB</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-nextjs-original-wordmark text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">NextJS</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-pandas-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Pandas</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-laravel-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Laravel</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-postgresql-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">PostgreSQL</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-portainer-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Portainer</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-postman-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Postman</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-rails-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Rails</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-readthedocs-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">ReadTheDocs</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-salesforce-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Salesforce</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-tailwindcss-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">TailwindCSS</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-sqlite-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">SQLite</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-stackoverflow-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">StackOverflow</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-ssh-plain text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">SSH</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center custom_hidden tech-item">
+                    <i class="devicon-windows8-original colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Windows 11</h3>
+                </div>
+            </div>
+            <div class="flex justify-center mt-4">
+                <button id="showMoreBtn" class="bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Show More
+                </button>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-2 accent-text">Project 1</h3>
+                    <p class="text-gray-400 mb-4">A personal project to have a similar function to the pterodactyl panel
+                        and other random things.</p>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <a href="https://github.com/daftscientist/project-1" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-2 accent-text">TubeScoop-API</h3>
+                    <p class="text-gray-400 mb-4">Effortlessly fetch YouTube videos, playlists, and channel details for
+                        seamless integration into your applications.</p>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <a href="https://github.com/daftscientist/TubeScoop-API" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-2 accent-text">VortexKit</h3>
+                    <p class="text-gray-400 mb-4">A lightweight, customizable WSGI framework designed to handle web
+                        requests with ease and flexibility.</p>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <a href="https://github.com/daftscientist/VortexKit" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://pypi.org/project/VortexKit" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path
+                                    d="M10.605 1.412c-1.006.24-1.68 1.035-1.71 2.074v4.05h5.442V4.488h-3.712v-.693c0-1.848 1.004-2.092 3.271-1.969.293.014.545.025.845.047V.522c-.267-.022-.518-.052-.792-.064-1.022-.04-1.887.018-2.344.137zm-5.46 3.066C3.582 4.99 3 5.543 3 7.076v5.017c0 3.666 1.942 5.78 5.805 5.78h1.351v-3.395H8.805c-2.152 0-3.064-.946-3.064-3.098V7.178h3.166V4.478c-1.524-.025-2.608.033-3.761.1zm10.194 2.4v3.395h3.243v3.27c0 1.735-1.048 2.02-3.182 1.933-.35-.012-.658-.035-.983-.06v1.88c.325.031.656.06.983.07 3.53.131 5.205-.893 5.205-4.006V7.087h-5.266zm-4.158 6.612v7.15c0 1.526.603 2.244 1.935 2.76 1.227.454 2.99.578 4.777.498.234-.011.463-.027.682-.048v-3.421c-.271.017-.53.035-.808.045-2.268.097-3.269-.217-3.269-1.986v-7.049h-3.317zm-1.914 5.052v5.266H12c1.645 0 2.38-.627 2.38-1.948v-3.318H9.267z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-2 accent-text">DisHook</h3>
+                    <p class="text-gray-400 mb-4">A small, lightweight discord web-hook API wrapper. Made with Python.
+                    </p>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <a href="https://github.com/daftscientist/DisHook" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://pypi.org/project/DisHookr" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path
+                                    d="M10.605 1.412c-1.006.24-1.68 1.035-1.71 2.074v4.05h5.442V4.488h-3.712v-.693c0-1.848 1.004-2.092 3.271-1.969.293.014.545.025.845.047V.522c-.267-.022-.518-.052-.792-.064-1.022-.04-1.887.018-2.344.137zm-5.46 3.066C3.582 4.99 3 5.543 3 7.076v5.017c0 3.666 1.942 5.78 5.805 5.78h1.351v-3.395H8.805c-2.152 0-3.064-.946-3.064-3.098V7.178h3.166V4.478c-1.524-.025-2.608.033-3.761.1zm10.194 2.4v3.395h3.243v3.27c0 1.735-1.048 2.02-3.182 1.933-.35-.012-.658-.035-.983-.06v1.88c.325.031.656.06.983.07 3.53.131 5.205-.893 5.205-4.006V7.087h-5.266zm-4.158 6.612v7.15c0 1.526.603 2.244 1.935 2.76 1.227.454 2.99.578 4.777.498.234-.011.463-.027.682-.048v-3.421c-.271.017-.53.035-.808.045-2.268.097-3.269-.217-3.269-1.986v-7.049h-3.317zm-1.914 5.052v5.266H12c1.645 0 2.38-.627 2.38-1.948v-3.318H9.267z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-2 accent-text">MailBuddy</h3>
+                    <p class="text-gray-400 mb-4">A utility designed to simplify the process of sending formatted emails
+                        through an SMTP server</p>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <a href="https://github.com/daftscientist/MailBuddy" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://pypi.org/project/MailBuddy" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path
+                                    d="M10.605 1.412c-1.006.24-1.68 1.035-1.71 2.074v4.05h5.442V4.488h-3.712v-.693c0-1.848 1.004-2.092 3.271-1.969.293.014.545.025.845.047V.522c-.267-.022-.518-.052-.792-.064-1.022-.04-1.887.018-2.344.137zm-5.46 3.066C3.582 4.99 3 5.543 3 7.076v5.017c0 3.666 1.942 5.78 5.805 5.78h1.351v-3.395H8.805c-2.152 0-3.064-.946-3.064-3.098V7.178h3.166V4.478c-1.524-.025-2.608.033-3.761.1zm10.194 2.4v3.395h3.243v3.27c0 1.735-1.048 2.02-3.182 1.933-.35-.012-.658-.035-.983-.06v1.88c.325.031.656.06.983.07 3.53.131 5.205-.893 5.205-4.006V7.087h-5.266zm-4.158 6.612v7.15c0 1.526.603 2.244 1.935 2.76 1.227.454 2.99.578 4.777.498.234-.011.463-.027.682-.048v-3.421c-.271.017-.53.035-.808.045-2.268.097-3.269-.217-3.269-1.986v-7.049h-3.317zm-1.914 5.052v5.266H12c1.645 0 2.38-.627 2.38-1.948v-3.318H9.267z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold mb-2 accent-text">LittleWings</h3>
+                    <p class="text-gray-400 mb-4">A RESTful API designed to manage and interact with Docker containers.
+                    <p>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <a href="https://github.com/daftscientist/LittleWings" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-12 text-center">
+            <h2 class="text-2xl font-bold mb-4">Contact</h2>
+            <p class="text-gray-400 mb-6">Feel free to reach out if you want to collaborate on a project or just want to
+                chat!</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://github.com/daftscientist" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="h-8 w-8 fill-current text-gray-400">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="mailto:leo.johnston@example.com" class="hover:text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        class="h-8 w-8 fill-current text-gray-400">
+                        <path d="M12 12.713L0 5.25v13.5h24V5.25l-12 7.463zM12 1.5l12 7.463V2.25H0v6.713L12 1.5z" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            const techItems = document.querySelectorAll('.tech-item');
+            let itemsPerRow = 2; // Default items per row
+            let rowsToShow = 2;
+            let isShowingMore = false; // Assume we're starting in "show more" mode
+    
+            function updateItemsVisibility() {
+                // Adjust itemsPerRow based on screen width
+                if (window.innerWidth >= 1280) itemsPerRow = 9;
+                else if (window.innerWidth >= 1024) itemsPerRow = 6;
+                else if (window.innerWidth >= 768) itemsPerRow = 4;
+                else itemsPerRow = 3; // Default for smaller screens
+    
+                let totalItemsToShow = itemsPerRow * rowsToShow;
+    
+                techItems.forEach((item, index) => {
+                    if (index < totalItemsToShow) {
+                        item.classList.remove('custom_hidden'); // Show items up to the totalItemsToShow
+                    } else {
+                        item.classList.add('custom_hidden'); // Hide items beyond totalItemsToShow
+                    }
+                });
+    
+                // Calculate the maximum number of rows
+                const maxRows = Math.ceil(techItems.length / itemsPerRow);
+    
+                // Update button text and state
+                if (rowsToShow < maxRows) {
+                    showMoreBtn.textContent = 'Show More';
+                    isShowingMore = true;
+                } else {
+                    showMoreBtn.textContent = 'Show Less';
+                    isShowingMore = false;
+                }
+            }
+    
+            // Initial update
+            updateItemsVisibility();
+    
+            // Update on window resize to adjust to new column layout
+            window.addEventListener('resize', updateItemsVisibility);
+    
+            // Toggle rowsToShow based on the current state of the button
+            showMoreBtn.addEventListener('click', function () {
+                const maxRows = Math.ceil(techItems.length / itemsPerRow);
+    
+                if (isShowingMore) {
+                    rowsToShow = maxRows; // Show all rows
+                    isShowingMore = false;
+                } else {
+                    rowsToShow = 2; // Show default rowsToShow
+                    isShowingMore = true;
+                }
+    
+                updateItemsVisibility();
+            });
+        });
+    </script>
+    
+    
+    <footer class="bg-gray-900 p-4 text-center">
+        <p class="text-gray-400">&copy; 2024 Leo Johnston</p>
+    </footer>
+
+</body>
+<script>
+    // Typing animation script
+    const typingElement = document.querySelector('.typing-animation');
+    const textToType = "Leo Johnston!";
+    let index = 0;
+
+    function typeWriter() {
+        if (index < textToType.length) {
+            typingElement.textContent += textToType.charAt(index);
+            index++;
+            setTimeout(typeWriter, 150); // Adjust typing speed here
+        }
+    }
+
+    typeWriter();
+</script>
+
+</html>
