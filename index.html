@@ -5,40 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leo Johnston - Software Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <style>
-        /* Custom styles */
-        .dark-mode {
-            background-color: #1a202c;
-            color: #e2e8f0;
-        }
-
-        .accent-text {
-            color: #FFE5B4;
-        }
-
-        .typing-animation::after {
-            content: '|';
-            animation: blink 1s infinite;
-        }
-
-        .custom_hidden {
-            display: none;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/tailwind.css">
 </head>
 
 <body class="dark-mode">
@@ -46,37 +16,50 @@
     <header class="bg-gray-900 p-4">
         <div class="container mx-auto flex justify-between items-center">
             <div>
-                <h1 class="text-3xl font-bold">Leo Johnston</h1>
+                <h1 class="text-3xl font-bold accent-text">Leo Johnston</h1>
                 <p class="text-sm">Software Developer</p>
             </div>
             <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="#about" class="hover:text-gray-400">About</a></li>
-                    <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
-                    <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+                <ul class="space-x-4 hidden md:flex">
+                    <li><a href="#about" class="hover:text-gray-400 font-semibold">About</a></li>
+                    <li><a href="#languages" class="hover:text-gray-400 font-semibold">Languages</a></li>
+                    <li><a href="#technologies" class="hover:text-gray-400 font-semibold">Technologies</a></li>
+                    <li><a href="#projects" class="hover:text-gray-400 font-semibold">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400 font-semibold">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="container mx-auto py-8">
-
         <!-- About Section -->
-        <section id="about" class="mb-12 text-center">
-            <h2 class="text-3xl font-bold mb-4">Hey there, I'm <span class="accent-text typing-animation"></span></h2>
-            <p class="text-gray-400 mb-4">
-                I'm a passionate software developer who loves exploring the world of technology.
-                Fluent in both English and Spanish, I enjoy discussing current affairs and have a deep fascination with
-                history.
-            </p>
-            <p class="text-gray-400">
-                GitHub Enthusiast 🌟 As a dedicated developer, I've co-authored numerous open-source projects and have a
-                strong command of various programming languages.
-            </p>
-            <p class="text-gray-400 mt-4">
-                Skills & Abilities 🛡️ I excel at turning ideas into real-world solutions, handling both frontend and
-                backend development. My toolbox includes Python, JavaScript, ReactJS, and more.
-            </p>
+        <!-- About Section -->
+        <section id="about" class="my-20 text-center px-4 lg:px-20">
+            <h2 class="text-4xl font-bold mb-8">Hey there, I'm <span class="accent-text typing-animation"></span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
+                <div class="flex items-center">
+                    <i class="fas fa-laptop-code text-blue-500 mr-2"></i>
+                    <span>Passionate software developer with a love for technology.</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-language text-blue-500 mr-2"></i>
+                    <span>Fluent in English and Spanish with a deep fascination for history.</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-heart text-blue-500 mr-2"></i>
+                    <span>GitHub Enthusiast and open-source contributor.</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-tools text-blue-500 mr-2"></i>
+                    <span>Skilled in Python, JavaScript, ReactJS, and full-stack development.</span>
+                </div>
+            </div>
+            <a href="#contact" class="inline-block mt-8">
+                <button
+                    class="bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Let's Connect!
+                </button>
+            </a>
         </section>
 
         <!-- Languages section -->
@@ -91,6 +74,10 @@
                 <div class="bg-gray-800 rounded-lg p-6 text-center">
                     <i class="devicon-javascript-plain colored text-4xl md:text-6xl "></i>
                     <h3 class="text-md font-semibold accent-text mt-2">JavaScript</h3>
+                </div>
+                <div class="bg-gray-800 rounded-lg p-6 text-center">
+                    <i class="devicon-ruby-plain colored text-4xl md:text-6xl "></i>
+                    <h3 class="text-md font-semibold accent-text mt-2">Ruby</h3>
                 </div>
                 <div class="bg-gray-800 rounded-lg p-6 text-center">
                     <i class="devicon-html5-plain colored text-4xl md:text-6xl "></i>
@@ -285,7 +272,8 @@
                 </div>
             </div>
             <div class="flex justify-center mt-4">
-                <button id="showMoreBtn" class="bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                <button id="showMoreBtn"
+                    class="bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                     Show More
                 </button>
             </div>
@@ -298,215 +286,210 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Project 1 -->
                 <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2 accent-text">Project 1</h3>
-                    <p class="text-gray-400 mb-4">A personal project to have a similar function to the pterodactyl panel
-                        and other random things.</p>
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-semibold mb-2 accent-text">Project 1</h3>
+                            <p class="text-gray-400 mb-4">A personal project to have a similar function to the
+                                pterodactyl panel
+                                and other random things.</p>
+                        </div>
+
+                        <!-- Technologies Used -->
+                        <div class="flex flex-wrap justify-end items-center mt-4">
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Python</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">SQLAlchemy</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Sanic</span>
+                        </div>
+                    </div>
                     <div class="flex items-center space-x-2 mb-4">
                         <a href="https://github.com/daftscientist/project-1" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path
-                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
-                            </svg>
+                            <i class="devicon-github-plain text-2xl fill-current"></i>
                         </a>
                     </div>
                 </div>
-                <!-- Project 2 -->
+                <!-- TubeScoop API -->
                 <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2 accent-text">TubeScoop-API</h3>
-                    <p class="text-gray-400 mb-4">Effortlessly fetch YouTube videos, playlists, and channel details for
-                        seamless integration into your applications.</p>
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-semibold mb-2 accent-text">TubeScoop-API</h3>
+                            <p class="text-gray-400 mb-4">Effortlessly fetch YouTube videos, playlists, and channel
+                                details for
+                                seamless integration into your applications.</p>
+                        </div>
+
+                        <!-- Technologies Used -->
+                        <div class="flex flex-wrap justify-end items-center mt-4">
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Javascript</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Regex</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">REST</span>
+                        </div>
+                    </div>
                     <div class="flex items-center space-x-2 mb-4">
                         <a href="https://github.com/daftscientist/TubeScoop-API" target="_blank"
                             rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path
-                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
-                            </svg>
+                            <i class="devicon-github-plain text-2xl fill-current"></i>
                         </a>
                     </div>
                 </div>
-
-                <!-- Project 3 -->
+                <!-- VortexKit -->
                 <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2 accent-text">VortexKit</h3>
-                    <p class="text-gray-400 mb-4">A lightweight, customizable WSGI framework designed to handle web
-                        requests with ease and flexibility.</p>
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-semibold mb-2 accent-text">VortexKit</h3>
+                            <p class="text-gray-400 mb-4">A lightweight, customizable WSGI framework designed to handle
+                                web
+                                requests with ease and flexibility.</p>
+                        </div>
+
+                        <!-- Technologies Used -->
+                        <div class="flex flex-wrap justify-end items-center mt-4">
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Python</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">OOP</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">HTTPs</span>
+                        </div>
+                    </div>
                     <div class="flex items-center space-x-2 mb-4">
                         <a href="https://github.com/daftscientist/VortexKit" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path
-                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
-                            </svg>
+                            <i class="devicon-github-plain text-2xl fill-current"></i>
                         </a>
                         <a href="https://pypi.org/project/VortexKit" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path
-                                    d="M10.605 1.412c-1.006.24-1.68 1.035-1.71 2.074v4.05h5.442V4.488h-3.712v-.693c0-1.848 1.004-2.092 3.271-1.969.293.014.545.025.845.047V.522c-.267-.022-.518-.052-.792-.064-1.022-.04-1.887.018-2.344.137zm-5.46 3.066C3.582 4.99 3 5.543 3 7.076v5.017c0 3.666 1.942 5.78 5.805 5.78h1.351v-3.395H8.805c-2.152 0-3.064-.946-3.064-3.098V7.178h3.166V4.478c-1.524-.025-2.608.033-3.761.1zm10.194 2.4v3.395h3.243v3.27c0 1.735-1.048 2.02-3.182 1.933-.35-.012-.658-.035-.983-.06v1.88c.325.031.656.06.983.07 3.53.131 5.205-.893 5.205-4.006V7.087h-5.266zm-4.158 6.612v7.15c0 1.526.603 2.244 1.935 2.76 1.227.454 2.99.578 4.777.498.234-.011.463-.027.682-.048v-3.421c-.271.017-.53.035-.808.045-2.268.097-3.269-.217-3.269-1.986v-7.049h-3.317zm-1.914 5.052v5.266H12c1.645 0 2.38-.627 2.38-1.948v-3.318H9.267z" />
-                            </svg>
+                            <i class="devicon-pypi-plain text-2xl fill-current"></i>
                         </a>
                     </div>
                 </div>
-
                 <!-- Project 3 -->
                 <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2 accent-text">DisHook</h3>
-                    <p class="text-gray-400 mb-4">A small, lightweight discord web-hook API wrapper. Made with Python.
-                    </p>
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-semibold mb-2 accent-text">DisHook</h3>
+                            <p class="text-gray-400 mb-4">A small, lightweight discord web-hook API wrapper. Made with
+                                Python.</p>
+                        </div>
+
+                        <!-- Technologies Used -->
+                        <div class="flex flex-wrap justify-end items-center mt-4">
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Python</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">OOP</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Discord
+                                API</span>
+                        </div>
+                    </div>
                     <div class="flex items-center space-x-2 mb-4">
                         <a href="https://github.com/daftscientist/DisHook" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path
-                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
-                            </svg>
+                            <i class="devicon-github-plain text-2xl fill-current"></i>
                         </a>
                         <a href="https://pypi.org/project/DisHookr" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path
-                                    d="M10.605 1.412c-1.006.24-1.68 1.035-1.71 2.074v4.05h5.442V4.488h-3.712v-.693c0-1.848 1.004-2.092 3.271-1.969.293.014.545.025.845.047V.522c-.267-.022-.518-.052-.792-.064-1.022-.04-1.887.018-2.344.137zm-5.46 3.066C3.582 4.99 3 5.543 3 7.076v5.017c0 3.666 1.942 5.78 5.805 5.78h1.351v-3.395H8.805c-2.152 0-3.064-.946-3.064-3.098V7.178h3.166V4.478c-1.524-.025-2.608.033-3.761.1zm10.194 2.4v3.395h3.243v3.27c0 1.735-1.048 2.02-3.182 1.933-.35-.012-.658-.035-.983-.06v1.88c.325.031.656.06.983.07 3.53.131 5.205-.893 5.205-4.006V7.087h-5.266zm-4.158 6.612v7.15c0 1.526.603 2.244 1.935 2.76 1.227.454 2.99.578 4.777.498.234-.011.463-.027.682-.048v-3.421c-.271.017-.53.035-.808.045-2.268.097-3.269-.217-3.269-1.986v-7.049h-3.317zm-1.914 5.052v5.266H12c1.645 0 2.38-.627 2.38-1.948v-3.318H9.267z" />
-                            </svg>
+                            <i class="devicon-pypi-plain text-2xl fill-current"></i>
                         </a>
                     </div>
                 </div>
                 <!-- Project 3 -->
                 <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2 accent-text">MailBuddy</h3>
-                    <p class="text-gray-400 mb-4">A utility designed to simplify the process of sending formatted emails
-                        through an SMTP server</p>
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-semibold mb-2 accent-text">MailBuddy</h3>
+                            <p class="text-gray-400 mb-4">A utility designed to simplify the process of sending
+                                formatted emails
+                                through an SMTP server</p>
+                        </div>
+
+                        <!-- Technologies Used -->
+                        <div class="flex flex-wrap justify-end items-center mt-4">
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Python</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">OOP</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">SMTP</span>
+                        </div>
+                    </div>
                     <div class="flex items-center space-x-2 mb-4">
                         <a href="https://github.com/daftscientist/MailBuddy" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path
-                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
-                            </svg>
+                            <i class="devicon-github-plain text-2xl fill-current"></i>
                         </a>
                         <a href="https://pypi.org/project/MailBuddy" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path
-                                    d="M10.605 1.412c-1.006.24-1.68 1.035-1.71 2.074v4.05h5.442V4.488h-3.712v-.693c0-1.848 1.004-2.092 3.271-1.969.293.014.545.025.845.047V.522c-.267-.022-.518-.052-.792-.064-1.022-.04-1.887.018-2.344.137zm-5.46 3.066C3.582 4.99 3 5.543 3 7.076v5.017c0 3.666 1.942 5.78 5.805 5.78h1.351v-3.395H8.805c-2.152 0-3.064-.946-3.064-3.098V7.178h3.166V4.478c-1.524-.025-2.608.033-3.761.1zm10.194 2.4v3.395h3.243v3.27c0 1.735-1.048 2.02-3.182 1.933-.35-.012-.658-.035-.983-.06v1.88c.325.031.656.06.983.07 3.53.131 5.205-.893 5.205-4.006V7.087h-5.266zm-4.158 6.612v7.15c0 1.526.603 2.244 1.935 2.76 1.227.454 2.99.578 4.777.498.234-.011.463-.027.682-.048v-3.421c-.271.017-.53.035-.808.045-2.268.097-3.269-.217-3.269-1.986v-7.049h-3.317zm-1.914 5.052v5.266H12c1.645 0 2.38-.627 2.38-1.948v-3.318H9.267z" />
-                            </svg>
+                            <i class="devicon-pypi-plain text-2xl fill-current"></i>
                         </a>
                     </div>
                 </div>
                 <!-- Project 3 -->
                 <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-semibold mb-2 accent-text">LittleWings</h3>
-                    <p class="text-gray-400 mb-4">A RESTful API designed to manage and interact with Docker containers.
-                    <p>
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-semibold mb-2 accent-text">LittleWings</h3>
+                            <p class="text-gray-400 mb-4">A RESTful API designed to manage and interact with Docker
+                                containers.</p>
+                        </div>
+
+                        <!-- Technologies Used -->
+                        <div class="flex flex-wrap justify-end items-center mt-4">
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Python</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">REST</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">Docker</span>
+                        </div>
+                    </div>
                     <div class="flex items-center space-x-2 mb-4">
                         <a href="https://github.com/daftscientist/LittleWings" target="_blank"
                             rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-                                <path
-                                    d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
-                            </svg>
+                            <i class="devicon-github-plain text-2xl fill-current"></i>
                         </a>
                     </div>
+                </div>
+            </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="mb-12 text-center">
-            <h2 class="text-2xl font-bold mb-4">Contact</h2>
-            <p class="text-gray-400 mb-6">Feel free to reach out if you want to collaborate on a project or just want to
-                chat!</p>
-            <div class="flex justify-center space-x-4">
-                <a href="https://github.com/daftscientist" target="_blank" rel="noopener noreferrer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        class="h-8 w-8 fill-current text-gray-400">
-                        <path
-                            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.11.793-.258.793-.577 0-.284-.01-1.04-.015-2.04-3.24.705-3.93-1.563-3.93-1.563-.53-1.342-1.293-1.698-1.293-1.698-1.06-.724.08-.71.08-.71 1.17.083 1.785 1.205 1.785 1.205 1.037 1.78 2.718 1.267 3.384.967.105-.748.407-1.267.74-1.558-2.588-.295-5.313-1.294-5.313-5.758 0-1.274.456-2.318 1.205-3.134-.12-.297-.52-1.485.114-3.09 0 0 .978-.314 3.2 1.2a10.94 10.94 0 0 1 2.893-.388c.98.002 1.97.13 2.893.388 2.22-1.514 3.197-1.2 3.197-1.2.635 1.605.235 2.793.115 3.09.75.816 1.204 1.86 1.204 3.134 0 4.476-2.727 5.458-5.322 5.747.418.36.79 1.068.79 2.156 0 1.558-.014 2.815-.014 3.202 0 .318.19.69.8.573C20.565 21.797 24 17.303 24 12c0-6.627-5.373-12-12-12z" />
-                    </svg>
-                </a>
-                <a href="mailto:leo.johnston@example.com" class="hover:text-gray-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        class="h-8 w-8 fill-current text-gray-400">
-                        <path d="M12 12.713L0 5.25v13.5h24V5.25l-12 7.463zM12 1.5l12 7.463V2.25H0v6.713L12 1.5z" />
-                    </svg>
-                </a>
+        <section id="contact" class="py-12 bg-gray-800 text-white m-0">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold mb-4 accent-text">Let's Connect...</h2>
+                    <p class="text-gray-400 max-w-md mx-auto">I'm always open to discussing new projects, creative
+                        ideas, or opportunities to be part of your visions.</p>
+                </div>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://github.com/daftscientist" target="_blank" rel="noopener noreferrer"
+                        class="transform hover:scale-110 transition duration-300">
+                        <i class="devicon-github-original text-5xl text-gray-400 hover:text-white"></i>
+                    </a>
+                    <a href="mailto:contact@leojohnston.tech" class="transform hover:scale-110 transition duration-300">
+                        <i class="fa-regular fa-envelope text-5xl text-gray-400 hover:text-white"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/leo-johnston/" target="_blank" rel="noopener noreferrer"
+                        class="transform hover:scale-110 transition duration-300">
+                        <i class="devicon-linkedin-plain text-5xl text-gray-400 hover:text-white"></i>
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~015d288c47880668bc" target="_blank"
+                        rel="noopener noreferrer" class="transform hover:scale-110 transition duration-300">
+                        <i class="devicon-up
+                        work-original text-5xl text-gray-400 hover:text-white"></i>
+                    </a>
+                    <!-- Add more social links as needed -->
+                </div>
             </div>
         </section>
+
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const showMoreBtn = document.getElementById('showMoreBtn');
-            const techItems = document.querySelectorAll('.tech-item');
-            let itemsPerRow = 2; // Default items per row
-            let rowsToShow = 2;
-            let isShowingMore = false; // Assume we're starting in "show more" mode
-    
-            function updateItemsVisibility() {
-                // Adjust itemsPerRow based on screen width
-                if (window.innerWidth >= 1280) itemsPerRow = 9;
-                else if (window.innerWidth >= 1024) itemsPerRow = 6;
-                else if (window.innerWidth >= 768) itemsPerRow = 4;
-                else itemsPerRow = 3; // Default for smaller screens
-    
-                let totalItemsToShow = itemsPerRow * rowsToShow;
-    
-                techItems.forEach((item, index) => {
-                    if (index < totalItemsToShow) {
-                        item.classList.remove('custom_hidden'); // Show items up to the totalItemsToShow
-                    } else {
-                        item.classList.add('custom_hidden'); // Hide items beyond totalItemsToShow
-                    }
-                });
-    
-                // Calculate the maximum number of rows
-                const maxRows = Math.ceil(techItems.length / itemsPerRow);
-    
-                // Update button text and state
-                if (rowsToShow < maxRows) {
-                    showMoreBtn.textContent = 'Show More';
-                    isShowingMore = true;
-                } else {
-                    showMoreBtn.textContent = 'Show Less';
-                    isShowingMore = false;
-                }
-            }
-    
-            // Initial update
-            updateItemsVisibility();
-    
-            // Update on window resize to adjust to new column layout
-            window.addEventListener('resize', updateItemsVisibility);
-    
-            // Toggle rowsToShow based on the current state of the button
-            showMoreBtn.addEventListener('click', function () {
-                const maxRows = Math.ceil(techItems.length / itemsPerRow);
-    
-                if (isShowingMore) {
-                    rowsToShow = maxRows; // Show all rows
-                    isShowingMore = false;
-                } else {
-                    rowsToShow = 2; // Show default rowsToShow
-                    isShowingMore = true;
-                }
-    
-                updateItemsVisibility();
-            });
-        });
-    </script>
-    
-    
     <footer class="bg-gray-900 p-4 text-center">
         <p class="text-gray-400">&copy; 2024 Leo Johnston</p>
     </footer>
-
 </body>
-<script>
-    // Typing animation script
-    const typingElement = document.querySelector('.typing-animation');
-    const textToType = "Leo Johnston!";
-    let index = 0;
-
-    function typeWriter() {
-        if (index < textToType.length) {
-            typingElement.textContent += textToType.charAt(index);
-            index++;
-            setTimeout(typeWriter, 150); // Adjust typing speed here
-        }
-    }
-
-    typeWriter();
-</script>
+<script src="js/main.js"></script>
+<script src="js/technologies.js"></script>
+<script src="js/typewriter.js"></script>
 
 </html>
