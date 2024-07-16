@@ -5,11 +5,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E9CDGECM5M"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-E9CDGECM5M');
+        gtag('config', 'G-E9CDGECM5M');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -293,11 +293,22 @@
         <!-- Projects Section -->
         <section id="projects" class="mb-12">
             <h2 class="text-2xl font-bold mb-4">Projects</h2>
-            <div class="mb-3 items-center">
-                <button id="all_button" class="filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" data-filter="all">All</button>
-                <button class="filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" data-filter="python">Python</button>
-                <button class="filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" data-filter="javascript">JavaScript</button>
-                <button class="filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out" data-filter="sql">SQL</button>
+            <div class="mb-3 items-center ">
+                <button id="all_button"
+                    class="filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    data-filter="all">All</button>
+                <button
+                    class="filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    data-filter="python">Python</button>
+                <button
+                    class="filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    data-filter="javascript">JavaScript</button>
+                <button
+                    class="filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    data-filter="html">HTML</button>
+                <button
+                    class="mt-1.5 md:mt-0 filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                    data-filter="sql">SQL</button>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Project 1 -->
@@ -441,6 +452,30 @@
                     </div>
                 </div>
                 <!-- Project 3 -->
+                <div class="project bg-gray-800 rounded-lg p-6" data-tech="HTML JavaScript">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-grow">
+                            <h3 class="text-xl font-semibold mb-2 accent-text">Portfolio website</h3>
+                            <p class="text-gray-400 mb-4">A fully-fledged portfolio website, built to showcase my
+                                abilities in HTML, CSS, Tailwind and JavaScript DOM and to showcase my projects.</p>
+                        </div>
+
+                        <!-- Technologies Used -->
+                        <div class="flex flex-wrap justify-end items-center mt-4">
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">HTML</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">JavaScript</span>
+                            <span
+                                class="bg-gray-700 text-white text-sm font-semibold mr-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-600 dark:text-gray-300 upper">CSS</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <a href="https://github.com/daftscientist/portfolio" target="_blank" rel="noopener noreferrer">
+                            <i class="devicon-github-plain text-2xl fill-current"></i>
+                        </a>
+                    </div>
+                </div>
                 <div class="project bg-gray-800 rounded-lg p-6" data-tech="Python">
                     <div class="flex justify-between items-start">
                         <div class="flex-grow">
@@ -469,33 +504,44 @@
             </div>
         </section>
         <!-- Blog Section -->
-<section id="blog" class="mb-12">
-    <h2 class="text-2xl font-bold mb-4">Blog posts</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Blog Post 1 -->
-        <div class="relative">
-            <div class="group relative">
-                <img src="https://media.licdn.com/dms/image/D4E12AQG1ofw828btDQ/article-cover_image-shrink_720_1280/0/1720997660582?e=1726704000&v=beta&t=Ij6i4t41AuMXKr4LOy1e3zUZU2lSiFRolqLf_yBFmWc" alt="Blog Post 1"
-                    class="w-full rounded-t-lg">
-                <div class="absolute inset-0 hover:bg-black group-hover:bg-opacity-50 flex items-center justify-center transition-opacity duration-300 rounded-t-lg">
-                    <a href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank" rel="noopener noreferrer" class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        Read on LinkedIn
-                    </a>
+        <section id="blog" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Blog posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Blog Post 1 -->
+                <div class="relative">
+                    <div class="group relative">
+                        <img src="https://media.licdn.com/dms/image/D4E12AQG1ofw828btDQ/article-cover_image-shrink_720_1280/0/1720997660582?e=1726704000&v=beta&t=Ij6i4t41AuMXKr4LOy1e3zUZU2lSiFRolqLf_yBFmWc"
+                            alt="Blog Post 1" class="w-full rounded-t-lg">
+                        <div
+                            class="absolute inset-0 hover:bg-black group-hover:bg-opacity-50 flex items-center justify-center transition-opacity duration-300 rounded-t-lg">
+                            <a href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                Read on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-b-lg p-6">
+                        <a class="hover:underline"
+                            href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank"
+                            rel="noopener noreferrer">
+                            <h3 class="text-xl font-semibold mb-2 accent-text">My OOP journey</h3>
+                        </a>
+                        <p class="text-gray-400 mb-4">
+                            Throughout my programming journey, enhancing code usability and readability has always been
+                            a priority. Reflecting on my past projects, I notice a significant improvement in the
+                            composition of my code... <a
+                                href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-blue-700 hover:text-blue-500 hover:underline font-semibold">Read More</a>
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="bg-gray-800 rounded-b-lg p-6">
-                <a class="hover:underline" href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank" rel="noopener noreferrer"><h3 class="text-xl font-semibold mb-2 accent-text">My OOP journey</h3></a>
-                <p class="text-gray-400 mb-4">
-                    Throughout my programming journey, enhancing code usability and readability has always been a priority. Reflecting on my past projects, I notice a significant improvement in the composition of my code... <a href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank" rel="noopener noreferrer"
-                        class="text-blue-700 hover:text-blue-500 hover:underline font-semibold">Read More</a>
-                </p>
-            </div>
-        </div>
-        
-        <!-- Add more blog posts here -->
 
-    </div>
-</section>
+                <!-- Add more blog posts here -->
+
+            </div>
+        </section>
 
 
         <!-- Contact Section -->
@@ -537,4 +583,5 @@
 <script src="js/technologies.js"></script>
 <script src="js/typewriter.js"></script>
 <script src="js/projects_filter.js"></script>
+
 </html>
