@@ -469,24 +469,34 @@
             </div>
         </section>
         <!-- Blog Section -->
-        <section id="blog" class="mb-12">
-            <h2 class="text-2xl font-bold mb-4">Blog posts</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Blog Post 1 -->
-                <div>
-                    <img src="https://media.licdn.com/dms/image/D4E12AQG1ofw828btDQ/article-cover_image-shrink_720_1280/0/1720997660582?e=1726704000&v=beta&t=Ij6i4t41AuMXKr4LOy1e3zUZU2lSiFRolqLf_yBFmWc" alt="Blog Post 1"
-                        class="w-full rounded-t-lg">
-                    <div class="bg-gray-800 rounded-b-lg p-6">
-                        <a class="hover:underline" href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank" rel="noopener noreferrer"><h3 class="text-xl font-semibold mb-2 accent-text">My OOP journey</h3></a>
-                        <p class="text-gray-400 mb-4">
-                            Throughout my programming journey, enhancing code usability and readability has always been a priority. Reflecting on my past projects, I notice a significant improvement in the composition of my code... <a href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank" rel="noopener noreferrer"
-                                class="text-blue-700 hover:text-blue-500 hover:underline font-semibold">Read More</a>
-                        </p>
-                    </div>
+<section id="blog" class="mb-12">
+    <h2 class="text-2xl font-bold mb-4">Blog posts</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Blog Post 1 -->
+        <div class="relative">
+            <div class="group relative">
+                <img src="https://media.licdn.com/dms/image/D4E12AQG1ofw828btDQ/article-cover_image-shrink_720_1280/0/1720997660582?e=1726704000&v=beta&t=Ij6i4t41AuMXKr4LOy1e3zUZU2lSiFRolqLf_yBFmWc" alt="Blog Post 1"
+                    class="w-full rounded-t-lg">
+                <div class="absolute inset-0 hover:bg-black group-hover:bg-opacity-50 flex items-center justify-center transition-opacity duration-300 rounded-t-lg">
+                    <a href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank" rel="noopener noreferrer" class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        Read on LinkedIn
+                    </a>
                 </div>
-                
-                <!-- Blog Post 2 -->
-        </section>
+            </div>
+            <div class="bg-gray-800 rounded-b-lg p-6">
+                <a class="hover:underline" href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank" rel="noopener noreferrer"><h3 class="text-xl font-semibold mb-2 accent-text">My OOP journey</h3></a>
+                <p class="text-gray-400 mb-4">
+                    Throughout my programming journey, enhancing code usability and readability has always been a priority. Reflecting on my past projects, I notice a significant improvement in the composition of my code... <a href="https://www.linkedin.com/pulse/my-oop-journey-leo-johnston-s11xe" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-700 hover:text-blue-500 hover:underline font-semibold">Read More</a>
+                </p>
+            </div>
+        </div>
+        
+        <!-- Add more blog posts here -->
+
+    </div>
+</section>
+
 
         <!-- Contact Section -->
         <section id="contact" class="py-12 bg-gray-800 text-white m-0">
