@@ -7,9 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     filterButtons.forEach(button => {
         button.addEventListener('click', function () {
-            button.className = "filter-btn bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            button.classList.add('bg-gray-600', 'text-accent', 'font-bold', 'py-2', 'px-4', 'rounded', 'focus:outline-none', 'focus:shadow-outline');
+            button.classList.remove('bg-gray-700', 'hover:bg-gray-600', 'transform', 'transition', 'hover:scale-105', 'duration-300', 'ease-in-out');
+            
             if (last_button != null) {
-                last_button.className = "filter-btn bg-gray-700 hover:bg-gray-600 text-accent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                last_button.classList.add('bg-gray-700', 'hover:bg-gray-600', 'text-accent', 'font-bold', 'py-2', 'px-4', 'rounded', 'focus:outline-none', 'focus:shadow-outline', 'transform', 'transition', 'hover:scale-105', 'duration-300', 'ease-in-out');
+                last_button.classList.remove('bg-gray-600');
             }
             const filter = this.getAttribute('data-filter').toLowerCase(); // Normalize to lowercase
 
