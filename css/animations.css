@@ -1,0 +1,48 @@
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-20px); 
+  }
+}
+
+@keyframes progress-animate {
+  from { 
+    width: 0%; 
+  }
+  to { 
+    width: 75%; 
+  }
+}
+
+/* Hover Animations */
+.service-card,
+.portfolio-card,
+.testimonial-card,
+.mini-card {
+  transition: var(--transition);
+}
+
+.service-card:hover,
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.mini-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Button Animations */
+.btn-primary:hover,
+.btn-secondary:hover,
+.nav-cta:hover,
+.contact-link:hover {
+  transform: translateY(-2px);
+}
+
+/* Portfolio Link Animations */
+.portfolio-links a:hover {
+  transform: translateY(-2px);
+}
